@@ -1,0 +1,252 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #cba19c;
+    font-family: 'Readex Pro', sans-serif;
+	color: #1b3231;
+}
+
+/*Cabecera*/
+#header{
+    width: 100%;
+    height: 260px;
+    
+    font-family: "BebasNeue";
+    color: white;
+	background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.941)), url(../img/banner.png);
+     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.922)), url(../img/banner.png); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+
+header .textos-header{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 30px;
+    color: white;
+    margin: 1px;
+	margin-top: 180px;
+	font-size: 90px;
+    transition: all 200ms;
+}
+.textos-header h1:hover{
+    transform: rotate(1.2, 1.2);
+}
+
+.textos-header h2{
+    font-size: 20px;
+    color: white;
+	font-family: 'Raleway', sans-serif;;
+	margin-top: 1px;
+}
+.textos-header h3{
+    font-size: 100px;
+    color: white;
+	font-family: 'Inspiration', cursive;
+    margin: 7px;
+	margin-top: 1px;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.container::after {
+	content: "";
+	width: 2px;
+	height: 100%;
+	background: #1b3231;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 1px);
+	z-index: 1;
+}
+
+.evento {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 200px;
+	position: relative;
+}
+
+.evento::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100px;
+	background: #cba19c;
+	border: 2px solid #101010;
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 9px);
+	left: calc(50% - 9px);
+}
+
+.fecha {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: calc(42% + 20px);
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.foto {
+	width: 28%;
+	
+    border-radius: 15px;
+	position: relative;
+	box-shadow:rgb(139, 72, 72) 0px 7px 29px 0px;
+}
+
+.foto::after {
+	content: "";
+	display: block;
+	border: 20px solid transparent;
+	border-left: 20px solid rgb(139, 72, 72);
+	position: absolute;
+	right: -50px;
+	top: calc(50% - 20px);
+}
+
+.foto img {
+	width: 100%;
+    border-radius: 10px;
+	vertical-align: top;
+}
+
+.evento:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.evento:nth-child(even) .fecha {
+	justify-content: end;
+}
+
+.evento:nth-child(even) .foto::after {
+	content: "";
+	border: 20px solid transparent;
+	border-right: 20px solid rgb(139, 72, 72);
+	right: initial;
+	left: -50px;
+}
+
+/*FOOTER*/
+
+#footer{
+    width: 100%;
+    height: 150px;
+    background: #A16B64;
+    color: white;
+    overflow: hidden;
+	position: absolute;
+}
+
+#footer .wrap > div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'TrebuchetMS';
+}
+
+#footer a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 300ms;
+}
+#footer h5{
+    display: block;
+    background: url(../img/pxgray.png), rgb(255, 255, 255);
+    height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'BebasNeue';
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 3px;
+    font-size: 15px;
+}
+
+#footer ul li{
+    margin-top: 0px;
+    padding: 1px;
+    border-bottom: 1px solid #ccc;
+}
+#footer ul li a{
+    display: block;
+    height: 30px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
+}
+
+#footer{
+    margin-bottom: 10px;
+}
+
+#info > p{
+    color: white;
+    margin-top: 25%;
+}
+
+#footer .patrocinadores h5{
+    display: block;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+#footer #browsers img{
+    width: 80px;
+    margin-top: 3px;
+    margin-right: 0px;
+    
+
+}
+/*SCROLL*/
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb { /*el thumb es la barra*/
+    background: #660000;
+    border-radius: 5px;
+}

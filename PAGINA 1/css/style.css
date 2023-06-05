@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+}
+
+#btn-mas{
+    display: none; /*se oculta el casillero input*/
+}
+.cont{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.redes a, .icon-plus{
+    display: block;
+    text-decoration: none;
+    background: #8E0E00;
+    color: white;
+    width: 55px;
+    height: 55px;
+    line-height: 55px; /*centra los iconos*/
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.redes a:hover{
+    background: #fff;
+    color: #8E0E00;
+}
+.redes a{
+    
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    height: 700px;
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#menu{
+    float: right;
+    height: 70px;
+    background: transparent;
+}
+
+#menu ul li{
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+#menu ul li a:hover{
+    color: #e79b94;
+    transform: scale(1.2, 1.2);
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 75px;
+    color: white;
+    margin: 1px;
+    transition: all 200ms;
+}
+.textos-header h1:hover{
+    transform: rotate(1.2, 1.2);
+}
+
+.textos-header h2{
+    font-size: 80px;
+    color: white;
+    font-family: 'Inspiration', cursive;
+    margin: 2px;
+}
+.textos-header h3{
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+}
+
+
+
+
+/* TARJETAS*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.cards .card{
+    background: #A16B64;
+    display: flex;
+    width: 48%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    transition: all 300ms;
+    overflow: hidden;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+.cards .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+    transition: all 300ms;
+}
+.cards .card img{
+    animation: showIcon 300ms linear;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+
+.cards .card h4{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cards .card p{
+    font-family: 'Raleway', sans-serif;;
+}
+
+
+
+/* TARJETAS 2*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.container .tarjeta{
+    width: 28%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 5px 2px  rgba(0,0,0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    background: #A16B64;
+    transition: all 300ms;
+}
+
+.container .tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.container .tarjeta img{
+    width: 90%;
+    height: 80%;
+    border-radius: 50px;
+    margin-top: 8px;
+}
+
+
+.tarjeta .descripcion > a{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all 300ms;
+}
+
+.tarjeta:hover .descripcion{
+    animation: showDescripcion 400ms linear;
+}
+
+.container .tarjeta a{
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container .tarjeta a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+#footer{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    background: #A16B64;
+    color: white;
+    overflow: hidden;
+}
+
+#footer .wrap > div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'TrebuchetMS';
+}
+
+#footer a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 300ms;
+}
+#footer h5{
+    display: block;
+    background: url(../img/pxgray.png), rgb(255, 255, 255);
+    height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'BebasNeue';
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 3px;
+    font-size: 15px;
+}
+
+#footer ul li{
+    margin-top: 0px;
+    padding: 1px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer ul li a{
+    display: block;
+    height: 30px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
+}
+
+#footer{
+    margin-bottom: 10px;
+}
+
+#info > p{
+    color: white;
+    margin-top: 25%;
+}
+
+#footer .patrocinadores h5{
+    display: block;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+#footer #browsers img{
+    width: 80px;
+    margin-top: 3px;
+    margin-right: 0px;
+}
+
+/*SLIDER*/
+
+.slider{
+    width: 65%;
+    height: 80px;
+    margin-left: 17%;
+    padding-bottom: 300px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite  /*ANIMACION LINEAL CAMBIA IMAGENES*/
+    alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.slider > h2{
+    color: #000000;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.slider > h3{
+    color: #000000;
+    font-family: 'Inspiration', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+/*SCROLL*/
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb { /*el thumb es la barra*/
+    background: #660000;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,371 @@
+/*TABLET HORIZONTAL*/
+@media (max-width: 1270px) {
+
+    header .textos-header {
+        display: flex;
+        height: 250px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-header h1 {
+        font-size: 70px;
+    }
+
+    .textos-header h2 {
+        font-size: 75px;
+    }
+
+    .textos-header h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1251px) {
+    header {
+        width: 100%;
+        height: 500px;
+        background: -webkit-linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        position: relative;
+    }
+
+    .wave {
+        position: absolute;
+        top: 360px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1080px) {
+    #footer #browsers img {
+        width: 50px;
+    }
+
+    #footer .wrap>div {
+        /*PATROCINADORES*/
+        float: left;
+        width: 220px;
+    }
+}
+
+@media (max-width: 970px) {
+    header {
+        width: 100%;
+        height: 300px;
+        background: -webkit-linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        position: relative;
+    }
+
+    .wave {
+        position: absolute;
+        top: 220px;
+        width: 100%;
+    }
+
+    #menu ul li {
+        font-size: 15px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    header .textos-header {
+        display: flex;
+        height: 300px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-header h1 {
+        font-size: 70px;
+    }
+
+    .textos-header h2 {
+        font-size: 75px;
+    }
+
+    .textos-header h3 {
+        font-size: 15px;
+    }
+}
+
+/*TABLET VERTICAL*/
+@media (max-width: 769px) {
+    header {
+        width: 100%;
+        height: 140px;
+        background: -webkit-linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        position: relative;
+    }
+
+    .wave {
+        position: absolute;
+        top: 220px;
+        width: 100%;
+    }
+
+    #menu ul li {
+        font-size: 14px;
+        margin: 0px 8px 0px 8px;
+    }
+
+    header .textos-header {
+        display: flex;
+        height: 200px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-header h1 {
+        font-size: 50px;
+    }
+
+    .textos-header h2 {
+        font-size: 50px;
+    }
+
+    .textos-header h3 {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        height: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .container .tarjeta {
+        width: 26%;
+        height: 100%;
+        border-radius: 40px;
+        box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .container .tarjeta img {
+        width: 80%;
+        height: 70%;
+        border-radius: 50px;
+        margin-top: 7px;
+    }
+
+    .tarjeta .descripcion>a {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .cards .card {
+        display: flex;
+        width: 48%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .cards .card img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .cards .card>.contenido-texto-card {
+        width: 60%;
+        font-size: 11px;
+        color: rgb(255, 255, 255);
+    }
+
+    .cards .card h4 {
+        font-size: 17px;
+    }
+
+    .slider {
+        padding-bottom: 200px;
+    }
+
+    #footer .wrap>div {
+        float: left;
+        width: 200px;
+        height: 300px;
+        margin: 20px;
+    }
+
+    #info>p {
+        font-size: 11px;
+        margin-top: 47%;
+    }
+
+    #footer #browsers img {
+        width: 40px;
+        margin-top: 3px;
+    }
+}
+
+/*TLF VERTICAL*/
+@media (max-width: 580px) {
+    header {
+        width: 100%;
+        height: 280px;
+        background: -webkit-linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, hsla(38, 14%, 11%, 0.511), hsla(6, 100%, 28%, 0.686)), url(../img/fondo.png);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        position: relative;
+    }
+
+    .wave {
+        position: absolute;
+        top: 135px;
+        width: 100%;
+    }
+
+    #menu ul li {
+        font-size: 9px;
+        margin: 1px 2px 1px 2px;
+    }
+
+    header .textos-header {
+        display: flex;
+        height: 90px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-header h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .textos-header h2 {
+        font-size: 35px;
+    }
+
+    .textos-header h3 {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        height: 210px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container .tarjeta {
+        width: 26%;
+        height: 100%;
+        border-radius: 40px;
+        box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .container .tarjeta img {
+        width: 75%;
+        height: 65%;
+        border-radius: 45px;
+        margin-top: 3px;
+    }
+
+    .tarjeta .descripcion>a {
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .cards .card {
+        display: flex;
+        width: 48%;
+        height: 150px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .cards .card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .cards .card>.contenido-texto-card {
+        width: 60%;
+    }
+
+    .cards .card h4 {
+        font-size: 12px;
+    }
+
+    .cards .card p {
+        font-size: 8px;
+    }
+
+    .slider {
+        padding-bottom: 210px;
+    }
+
+    #footer .wrap>div {
+        float: left;
+        width: 150px;
+        height: 300px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    #footer h5 {
+        font-size: 9px;
+    }
+
+    #footer ul {
+        text-align: left;
+        margin: 3px;
+        font-size: 12px;
+    }
+
+    #info>p {
+        font-size: 9px;
+        margin-top: 70%;
+
+    }
+
+    #footer .patrocinadores h5 {
+        display: block;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #footer #browsers img {
+        width: 40px;
+        margin-top: 10px;
+    }
+
+}
